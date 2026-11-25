@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS jun CHARACTER SET utf8mb4;
+USE jun;
+CREATE TABLE IF NOT EXISTS jun_chat_tramites_curp (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ codigo_hash CHAR(64) NOT NULL UNIQUE,
+ curp CHAR(18) NOT NULL,
+ expediente_id BIGINT DEFAULT NULL,
+ INDEX (curp),
+ nombre VARCHAR(120) DEFAULT NULL,
+ servicio VARCHAR(100) DEFAULT NULL,
+ fecha_preferida DATE DEFAULT NULL,
+ paso VARCHAR(20) NOT NULL DEFAULT 'nombre',
+ estatus VARCHAR(20) NOT NULL DEFAULT 'pendiente',
+ canal_origen VARCHAR(20) NOT NULL DEFAULT 'whatsapp',
+ canal_actual VARCHAR(20) NOT NULL DEFAULT 'whatsapp',
+ canal_finalizacion VARCHAR(20) DEFAULT NULL,
+ creado TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
