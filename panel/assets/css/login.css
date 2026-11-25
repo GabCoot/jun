@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: #edf5f1;
+    font-family: system-ui, sans-serif;
+    color: #173b30;
+}
+.login-card {
+    width: min(100%, 420px);
+    background: white;
+    padding: 36px;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px #163b3020;
+}
+.brand {
+    color: #08784e;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+h1 {
+    margin-bottom: 4px;
+}
+p {
+    color: #52685f;
+}
+label {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: 600;
+}
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #b9cec3;
+    border-radius: 8px;
+    font: inherit;
+}
+button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px;
+    border: 0;
+    border-radius: 8px;
+    background: #08784e;
+    color: white;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+.error {
+    color: #a12222;
+}

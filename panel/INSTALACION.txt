@@ -1,0 +1,6 @@
+1. Importar sql/usuarios_panel.sql en la base de datos existente mediante phpMyAdmin.
+2. Revisar config/database.php y configurar los datos del hosting (o variables JUN_DB_*).
+3. Abrir login.php o index.php desde la carpeta yun.
+4. Usar las credenciales iniciales proporcionadas por separado. Cambiar la contraseña antes de publicar, generando un hash con password_hash() y actualizando clave_hash en la tabla jun_panel_usuarios.
+5. Usar HTTPS y retirar la carpeta sql del directorio público. Utilizar datos ficticios durante las pruebas.
+No se incluyen las tablas originales de expedientes y citas porque no estaban en el ZIP recibido.

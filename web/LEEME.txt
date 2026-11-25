@@ -1,0 +1,7 @@
+JUN - Proyecto web reorganizado
+
+Copiar la carpeta web a htdocs de XAMPP. Iniciar Apache y MySQL. Abrir http://localhost/web/ o http://localhost/web/php/login.php.
+Configurar config/db.php con los datos de MySQL. Se conserva la configuración original (asistente_salud). El RAR no incluye SQL.
+php: lógica y rutas; vistas: plantillas HTML con PHP dinámico; css: estilos; js: JavaScript; html: HTML estático.
+Las rutas relativas de las vistas se resuelven desde php/. No abrir las vistas directamente.
+Usar datos ficticios durante las pruebas. No se ha realizado una prueba integral con MySQL.
